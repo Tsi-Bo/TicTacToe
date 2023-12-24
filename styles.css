@@ -1,0 +1,46 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.game {
+  height: 600px;
+  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 3px solid white;
+}
+
+.square {
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.scores {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.status-btn {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
