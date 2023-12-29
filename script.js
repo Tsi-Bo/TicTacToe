@@ -16,6 +16,8 @@ const resetButton = document.querySelector(".reset-btn");
 const player1Text = document.querySelector(".player1");
 const player2Text = document.querySelector(".player2");
 const tiesText = document.querySelector(".ties");
+const menuButton = document.querySelector(".menu");
+const sidebar = document.querySelector(".navbar");
 
 // On load
 player1Text.textContent = `PLAYER 1 : ${player1Score}`;
@@ -119,3 +121,8 @@ function checkDraw() {
 function isGameOver() {
   return checkWin() || checkDraw();
 }
+
+// Making the menu interactive
+menuButton.addEventListener("click", function () {
+  sidebar.classList.toggle("hidden");
+});
